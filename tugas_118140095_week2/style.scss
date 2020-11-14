@@ -1,0 +1,121 @@
+$mycolour : #f4f4f2;
+$bgcolour : #e8e8e8;
+$textcolour: #1a1c20;
+$navbg : #495464;
+$navhover : #bbbfca;
+$number1 : 20px;
+$height: 830px;
+$widthimg: 180px;
+$widthimggaleri: 250px;
+$radiusborder: 50px;
+$align1 : center;
+$align2: justify;
+
+body{
+	background-color: $bgcolour;
+}
+
+.navbar{
+	
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: $navbg;
+	}
+	li{
+		float: left;
+		margin-right: $number1;
+	}
+	li a{
+		display: block;
+		color: white;
+		text-align: $align1;
+		padding: 14px $number1;
+		text-decoration: none;
+	}
+	li a:hover{
+		background-color: $navhover;
+	}
+}
+
+.content{
+	background-color: $mycolour;
+	display: block;
+	min-height: $height;
+	padding: $number1;
+
+	img{
+	width: $widthimg;
+	border-radius: $radiusborder;
+	border: 1px solid #17706e;
+	}
+}
+
+.content #index{
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	h1{
+		text-align: center;
+		color: $textcolour;
+	}
+	p{
+		text-align: $align2;
+		text-decoration: none;
+		display: flex;
+		justify-content: space-between;
+		color: $textcolour;
+	}
+}
+
+.content #galeri{
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: $widthimggaleri;
+	}
+	p{
+		text-align: $align1;
+		text-decoration: none;
+		color: $textcolour;
+	}
+}
+
+.content #kontak{
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	p{
+		text-align: $align1;
+		text-decoration: none;
+		color: $textcolour;
+	}
+}
+
+.content #about{
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	p{
+		text-decoration: none;
+		display: flex;
+		justify-content: space-arround;
+		color: $textcolour;
+	}
+}
+.footer{
+	p{
+		text-align: $align1;
+		text-decoration: none;
+		color: $textcolour;
+	}
+}
